@@ -1,0 +1,17 @@
+bin
+develop-eggs
+dist
+downloads
+eggs
+parts
+src/*.egg-info
+.DS_Store
+.coverage
+.installed.cfg
+.ropeproject
+*.egg-info
+*.pyc
+*.pyo
+*.swp
+*.sublime-project
+*.sublime-workspace
