@@ -1,5 +1,5 @@
 all:
-	python bootstrap.py
+	python bootstrap.py -v 1.7.1
 	bin/buildout
 
 clean:
