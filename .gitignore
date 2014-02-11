@@ -5,6 +5,7 @@ downloads
 eggs
 parts
 src/*.egg-info
+var/
 .DS_Store
 .coverage
 .installed.cfg

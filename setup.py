@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 setup(name='projectname',
@@ -11,16 +11,12 @@ setup(name='projectname',
       author='',
       url='https://github.com/tobigue',
 
-      package_dir={'': 'src'},
-      packages=find_packages('src'),
-      include_package_data=True,
-
       install_requires=[
       ],
 
       entry_points={
-        'console_scripts': [
-        'hello = projectname.__init__:test',
-        ]
+          'console_scripts': [
+              'hello = projectname.__init__:test',
+          ]
       }
-     )
+      )

@@ -8,11 +8,12 @@ clean:
 	find . -name '*.pyc' -exec rm -fv {} \;
 	find . -name '*.pyo' -exec rm -fv {} \;
 	find . -depth -name '*.egg-info' -exec rm -rfv {} \;
+	find . -depth -name '__pycache__' -exec rm -rfv {} \;
 
 name:
 	@ echo WARNING: This works only one time, no typos!
 	@ echo === What is the project name? ===
 	@ read newname ;\
-	mv src/projectname src/$$newname ;\
-	sed -i s/projectname/$$newname/g buildout.cfg setup.py ;\
+	mv projectname $$newname ;\
+	sed -i s/projectname/$$newname/g buildout.cfg setup.py test/pytest.ini ;\
 	echo === Project $$newname initialized ===
